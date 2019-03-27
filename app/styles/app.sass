@@ -1,9 +1,11 @@
-body
-  background-color: red
+$base-width: 200px
 
+body
+  font-family: sans-serif
 .card
-  max-width: 200px
-  background-color: blue
+  max-width: $base-width
+  box-shadow: 0 0 50px 15px rgba(242,158,242,1)
+  background-image: linear-gradient(156deg, #f6f6f6 22%, #ff4c94 22.1%)
   margin: 0 auto
   border: 5px solid white
   border:
@@ -11,34 +13,57 @@ body
   &__logo
     width: 40px
     height: 40px
+    color: #e0205a
+    margin: 20px 0
   &__title
     margin-bottom: 5px
+    font-size: 18px
   &__price
     text-transform: uppercase
-    background-color: gray
-    padding: 5px 15px
+    letter-spacing: 5px
+    background-color: #e0205a
+    padding: 2px 15px
     border:
       radius: 10px
   &__subtitle
     text-transform: lowercase
     margin-top: 5px
-    font-size: 10px
+    font-size: 12px
     font-weight: 700
+    color: #e0205a
   &__description
+    padding-left: 20px
+    margin-right: 5px
     color: white
+
+  &__list-item
+    font-size: 12px
+    font-style: italic
+    margin-bottom: 10px
+
   &__button
     text-transform: uppercase
     background-color: white
-    color: pink
+    color: #ff4c94
     border-radius: 30px
     padding: 10px 30px
     letter-spacing: 1px
   &__information
     margin-top: 10px
-    font-size: 12px
-    color: lightblue
+    font-size: 10px
+    color: #448dfa
     text-transform: uppercase
-
+    font-weight: 700
+ul
+  list-style: none
+li
+  &:before
+    content: "\2022"
+    color: #c0165b
+    font-weight: bold
+    display: inline-block
+    width: 1em
+    margin-left: -1em
 .test
   display: flex
   color: white
