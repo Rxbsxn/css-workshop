@@ -4,17 +4,49 @@ body
 .card
   max-width: 200px
   background-color: blue
-  height: 400px
   margin: 0 auto
-  border:
-    // radius: 50px
-    radius: 20%
-
-.card2
-  max-width: 200px
-  background-color: blue
-  height: 400px
-  margin: 0 auto
+  border: 5px solid white
   border:
     radius: 50px
-    // radius: 20%
+  &__logo
+    width: 40px
+    height: 40px
+  &__title
+    margin-bottom: 5px
+  &__price
+    text-transform: uppercase
+    background-color: gray
+    padding: 5px 15px
+    border:
+      radius: 10px
+  &__subtitle
+    text-transform: lowercase
+    margin-top: 5px
+    font-size: 10px
+    font-weight: 700
+  &__description
+    color: white
+  &__button
+    text-transform: uppercase
+    background-color: white
+    color: pink
+    border-radius: 30px
+    padding: 10px 30px
+    letter-spacing: 1px
+  &__information
+    margin-top: 10px
+    font-size: 12px
+    color: lightblue
+    text-transform: uppercase
+
+.test
+  display: flex
+  color: white
+  flex-direction: column
+  align-items: center
+
+.test2
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin-bottom: 20px
